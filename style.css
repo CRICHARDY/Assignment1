@@ -1,0 +1,100 @@
+*{
+    width: 1200px;
+    height: 673px;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%
+    height：100vh;
+    background-image:url(images/allKAI.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 220px;
+    height:100px;
+    transform: translateY(-285%);
+    cursor: pointer;
+}
+.navbar{
+    width: 15%
+    height: 5%
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+button{
+    color:rgb(251, 201, 0)
+    padding: 1em;
+    background:transparent;
+    border: 2px dotted;
+    border-radius: 10px;
+    outline: 8px ridge rgba(170, 50, 220, .6);border-radius: 2rem;
+    cursor: zoom-out;
+}
+.content{
+    color:rgb(244, 248, 6);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    Z-index: 2;
+}
+
+h1{
+    font-size: 30px;
+    margin: -20px 0 30px;
+    line-height: 80px;
+}
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#08d6ec, #022bf5);
+    position:absolute;
+    right:0;
+    top:0;
+}
+.basketball img{
+    width:10 px;
+    animation: basketball 7s linear infinite;
+}
+.baksketball{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-70;
+}
+
+@keyframes basketball{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    70%{
+
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.basketball img:nth-child(1){
+    animation-delay: 2s;
+}
+.basketball img:nth-child(2){
+    animation-delay: 4.5s;
+}
+.basketball img:nth-child(3){
+    animation-delay: 6s;
+}
